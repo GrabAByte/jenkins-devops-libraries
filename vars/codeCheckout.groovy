@@ -1,6 +1,6 @@
 #!/usr/bin/env/groovy
 
-import devops.grababyte.mapVarss
+import devops.grababyte.mapVars
 
 def call(body) {
 
