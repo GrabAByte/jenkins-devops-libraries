@@ -1,0 +1,25 @@
+---
+# Jenkins
+jenkins:
+
+# Ansible
+ansible:
+  forks: 1
+
+# Apps
+apps:
+
+# Nexus
+nexus:
+
+# Docker
+docker:
+
+# Git
+git:
+
+# AWS
+aws:
+
+# SonarQube
+sonarqube:
