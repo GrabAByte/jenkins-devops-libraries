@@ -8,6 +8,5 @@ name: CI
 
 jobs:
   groovy-ci:
-    steps:
-      - uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@feat/groovyci
-      - uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@feat/groovyci
+    uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@feat/groovyci
+    uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@feat/groovyci
