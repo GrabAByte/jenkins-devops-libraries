@@ -7,5 +7,5 @@ name: CI
       - main
 
 jobs:
-  yaml-lint:
+  groovy-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@feat/groovyci
