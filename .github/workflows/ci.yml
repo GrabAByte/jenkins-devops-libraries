@@ -1,0 +1,11 @@
+---
+name: CI
+'on':
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  groovy-lint:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@feat/groovyci

@@ -1,14 +1,14 @@
 #!/usr/bin/groovy
 def call() {
 
-  def String dockerAgent
+  def String jenkinsAgent
   def Integer buildNumber = env.BUILD_NUMBER.toInteger()
 
   if (buildNumber % 2 == 0) {
-    dockerAgent = "even"
+    jenkinsAgent = "even"
   } else {
-    dockerAgent = "odd"
+    jenkinsAgent = "odd"
   }
 
-  return dockerAgent
+  return jenkinsAgent
 }
