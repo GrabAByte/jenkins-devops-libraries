@@ -8,4 +8,4 @@ name: CI
 
 jobs:
   groovy-lint:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@feat/groovyci
+    uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@main
