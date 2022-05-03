@@ -7,5 +7,22 @@ name: CI
       - main
 
 jobs:
+  get-version:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/getVersion.yml@0.0.5
+    with:
+      metadataFile: 'metadata.json'
+      metadataPath: .
   groovy-lint:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@feat/groovyci
+    uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@0.0.5
+    with:
+      groovyPath: .
+    needs: get-version
+  update-version:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/updateVersion.yml@0.0.5
+    with:
+      gitUsername: 'grababyte'
+      gitEmail: 'grababyte@github.com'
+      metadataFile: 'metadata.json'
+      metadataPath: .
+    needs: groovy-lint
+
