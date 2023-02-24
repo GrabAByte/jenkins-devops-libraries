@@ -39,7 +39,6 @@ It is important to note that general metadata for your code repositories and dev
 ```
 
 # Methods
-```
 ## vars/ansibleCollections.groovy
 ```
 Function: This will install any dependent ansible collections you may have
@@ -181,10 +180,6 @@ nexusUpload(
 ## vars/sonarScan.groovy (DEPRECATED)
 ```
 Function: Run the Sonar Scan for the code repository you have cloned in the Pipeline
-
-Usage:
-
-This is now deprecated in favour of Gitlab CI Templetes located in the gitlab-devops-templates code repository
 ```
 
 # Installation
