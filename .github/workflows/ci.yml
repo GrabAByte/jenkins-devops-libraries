@@ -13,7 +13,7 @@ jobs:
       metadataFile: 'metadata.json'
       metadataPath: .
   groovy-lint:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@fix/groovyFailOn
+    uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@0.6.4
     with:
       groovyPath: .
     needs: get-version
