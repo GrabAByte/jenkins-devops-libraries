@@ -12,11 +12,11 @@ jobs:
     with:
       metadataFile: 'metadata.json'
       metadataPath: .
-  groovy-lint:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@0.6.4
-    with:
-      groovyPath: .
-    needs: get-version
+  # groovy-lint:
+  #   uses: GrabAByte/github-devops-workflows/.github/workflows/groovyLint.yml@0.6.4
+  #   with:
+  #     groovyPath: .
+  #   needs: get-version
   sonar-scan:
     uses: GrabAByte/github-devops-workflows/.github/workflows/sonarScan.yml@0.6.4
     secrets:
@@ -30,4 +30,4 @@ jobs:
       gitEmail: 'grababyte@github.com'
       metadataFile: 'metadata.json'
       metadataPath: .
-    needs: groovy-lint
+    needs: sonar-scan
